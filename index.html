@@ -1,26 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="changeMoney.css" />
     <title>Chuyển đổi tiền tệ</title>
-</head>
-<body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Amount</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>
+          <input type="number" id="amount" step="0.5" />
+        </td>
+        <td>
+          <select id="selectFrom">
+            <option value="choose">--- Choose ---</option>
+            <option value="VietNam">VietNam</option>
+            <option value="USD">USD</option>
+          </select>
+        </td>
+        <td>
+          <select id="selectTo">
+            <option value="choose">--- Choose ---</option>
+            <option value="VietNam">VietNam</option>
+            <option value="USD">USD</option>
+          </select>
+        </td>
+        <td>
+          <button type="button" id="btn1">Chuyển đổi</button>
+        </td>
+      </tr>
+    </table>
+    <p id="result"></p>
 
     <script src="./changeMoney.js"></script>
-</body>
+  </body>
 </html>
